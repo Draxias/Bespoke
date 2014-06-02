@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bespoke.zaghi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.bespoke.zaghi.Splash"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bespoke.zaghi.PersonalMode"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Personal Mode"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.bespoke.zaghi.PersonalMode" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.bespoke.zaghi.About"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.bespoke.zaghi.ConversationMode"
+            android:configChanges="orientation|keyboardHidden"
+           
+         android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.bespoke.zaghi.ConversationMode" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+
+        <activity
+            android:name="com.bespoke.zaghi.RecordMode"
+            
+            android:label="Record Mode"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="com.bespoke.zaghi.RecordMode" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bespoke.zaghi.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.bespoke.zaghi.Menu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TTSActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TTSpeaker"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.bespoke.zaghi.Translator"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".TTSSpeaker"
+            android:label="@string/app_name" >
+        </service>
+        <service android:name="com.bespoke.zaghi.LanguageSelector" >
+        </service>
+
+        <activity
+            android:name="org.ispeech.iSpeechFramework"
+            android:configChanges="orientation|keyboard"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <!-- used for ispeech authorization -->
+        <meta-data
+            android:name="ispeech_api_key"
+            android:value="8faf32a72b25320c8dd8d137451a5bc2" />
+        <meta-data
+            android:name="debug"
+            android:value="false" />
+    </application>
+
+</manifest>

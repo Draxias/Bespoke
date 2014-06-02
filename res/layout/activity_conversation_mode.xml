@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="fill"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="100" >
+
+    <!-- topchild -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        android:rotation="180" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/tvLangTop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="62"
+                    android:paddingLeft="5dp"
+                    android:text="Language:" />
+
+                <Spinner
+                    android:id="@+id/topLanguages"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="38"
+                    android:entries="@array/localized_language_array"
+                    android:prompt="@string/language_prompt"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/tvInVoiceTop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="70"
+                android:paddingLeft="5dp"
+                android:text="Voice Input:" />
+
+            <ImageButton
+                android:id="@+id/topBtnSpeak"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:contentDescription="Speak!"
+                android:src="@android:drawable/ic_btn_speak_now" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/tvResultTop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="5dp"
+                android:text="Result:" />
+
+            <ScrollView
+                android:id="@+id/tvScrollerTop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvTranslatedTextTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- divider -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cropToPadding="true"
+        android:padding="0dp"
+        android:src="@drawable/divider" />
+
+    <!-- bottomchild -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="50"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/tvLangBottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="62"
+                    android:paddingLeft="5dp"
+                    android:text="Language:" />
+
+                <Spinner
+                    android:id="@+id/bottomLanguages"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="38"
+                    android:entries="@array/localized_language_array"
+                    android:prompt="@string/language_prompt"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/tvInVoiceBottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="70"
+                android:paddingLeft="5dp"
+                android:text="Voice Input:" />
+
+            <ImageButton
+                android:id="@+id/bottomBtnSpeak"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:contentDescription="Speak!"
+                android:src="@android:drawable/ic_btn_speak_now" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/tvResultBottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="5dp"
+                android:text="Result:" />
+
+            <ScrollView
+                android:id="@+id/tvScrollerBottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvTranslatedTextBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

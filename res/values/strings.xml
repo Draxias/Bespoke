@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MicrosoftTranslatorAndroidTestActivity!</string>
+    <string name="app_name">Bespoke</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="speak">Push and talk!</string>
+    <string name="language_prompt">Choose a language</string>
+    <string name="top_language_prompt" rotation="180">Choose a language</string>
+
+    <color name="black">#000000</color>
+
+    <string name="about_txt">        Version 5.03\n\n\n
+        
+        \tPersonal Mode:\nFirst set the “Input Language” (the language to be 
+        entered) and the “Output Language” (the language to translate to). You may 
+        then tap the “Voice Input” and speak in your statement or enter text 
+        manually and click on the “Translate” button.\n\n
+        
+        \tConversation Mode:\nEach side of the screen supports a separate user.
+        Users may set their language using their dropdown menu, then tap their
+        “Voice Input” button to begin speaking.\n\n
+        
+        \tRecording Mode:\nFirst set the “Input Language” (the language to be 
+        recorded). After Recording is complete, the user may select text in the 
+        “Transcripts” field and tap “Translate.” the selected text will be 
+        translated and spoken.\n\n
+        
+        \tProgrammers:\nArmand Akopian\nSean Buckley\nHootan Daneshfar\nEdward Eisen\nBrian Zaghi\n\n
+        Special thanks to Sara Afzali
+</string>
+
+    <!-- Language Key (Hidden) -->
+    <string-array name="languages_array">
+        <item>Choose a language...</item>
+        <item>Arabic</item>
+        <item>Bulgarian</item>
+        <item>Catalan</item>
+        <item>Chinese (Simplified)</item>
+        <item>Chinese (Traditional)</item>
+        <item>Czech</item>
+        <item>Danish</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>English (UK)</item>
+        <item>Estonian</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Haitian (Creole)</item>
+        <item>Hebrew</item>
+        <item>Hindi</item>
+        <item>Hmong Daw</item>
+        <item>Hungarian</item>
+        <item>Indonesian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Latvian</item>
+        <item>Lithuanian</item>
+        <item>Norwegian</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Slovak</item>
+        <item>Slovenian</item>
+        <item>Spanish</item>
+        <item>Swedish</item>
+        <item>Thai </item>
+        <item>Turkish</item>
+        <item>Ukrainian</item>
+        <item>Vietnamese</item>
+    </string-array>
+
+    <!-- Localized Spinner (Displayed) -->
+    <string-array name="localized_language_array">
+        <item>Choose a language...</item>
+        <item>(Arabic) العربية</item>
+        <item>български език (Bulgarian)</item>
+        <item>Català (Catalan)</item>
+        <item>汉语/漢語 (中语) (Chinese - Simplified)</item>
+        <item>汉语/漢語 (中語) (Chinese - Simplified)</item>
+        <item>Čeština (Czech)))</item>
+        <item>Dansk (Danish)</item>
+        <item>Nederlands (Dutch)</item>
+        <item>English</item>
+        <item>English (UK)</item>
+        <item>Eesti keel (Estonian)</item>
+        <item>Suomen kieli (Finnish)</item>
+        <item>Français (French)</item>
+        <item>Deutsch (German)</item>
+        <item>Eλληνικά (Greek)</item>
+        <item>Kreyòl ayisyen (Creole)</item>
+        <item>(Hebrew) עִבְרִית</item>
+        <item>मानक हिन्दी (Hindi)</item>
+        <item>Lus Hmoob (Hmong Daw)</item>
+        <item>Magyar (Hungarian)</item>
+        <item>Bahasa Indonesia (Indonesian)</item>
+        <item>Italiano (Italian)</item>
+        <item>日本語 (Japanese)</item>
+        <item>Chosŏnmal (Korean)</item>
+        <item>Latviešu valoda (Latvian)</item>
+        <item>Lietuvių kalba (Lithuanian)</item>
+        <item>Norsk (Norwegian)</item>
+        <item>Język polski (Polish)</item>
+        <item>Português (Portuguese)</item>
+        <item>Română (Romanian)</item>
+        <item>Русский язык (Russian)</item>
+        <item>Slovenčina (Slovak)</item>
+        <item>Slovenski jezik (Slovenian)</item>
+        <item>Español (Spanish)</item>
+        <item>Svenska (Swedish)</item>
+        <item>ภาษาไทย (Thai)</item>
+        <item>Türkçe (Turkish)</item>
+        <item>Yкраїнська мова (Ukranian)</item>
+        <item>Tiếng Việt (Vietnamese)</item>
+    </string-array>
+
+    <string name="spinnerprompt">Select file</string>
+
+</resources>
